@@ -1,33 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>每日一首</title>
-  <link src="./index.css">
+  <!-- <link rel="./index.css"></link> -->
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
+      background: url('https://tse3-mm.cn.bing.net/th/id/OIP.ohC8mRGUzKp_3r6QY7Ru9wHaNK?pid=Api&rs=1') repeat-x;
+      height: 100%;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #0EA9B1;
+    }
+
+    .box {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      left: 0;
+      top: 180px;
+    }
+
+    .box img {
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+      left: 0;
+    }
+
+    .box img:nth-child(1) {
+      animation: move 1.5s linear infinite alternate;
+    }
+
+    .box img:nth-child(2) {
+      animation: move 1.6s 0.5s linear infinite alternate;
+    }
+
+
+    @keyframes move {
+      from {
+        bottom: 0px;
+      }
+
+      to {
+        bottom: -50px;
+      }
+    }
+
+    .sun {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 250px;
+      top: -660px;
+    }
+
+    .sun:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, .8);
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      top: 50%;
+      margin-top: -25px;
+      animation: scale 1s linear infinite alternate;
+    }
+
+    .sun:before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, .6);
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      top: 50%;
+      margin-top: -40px;
+      animation: scale 1s 0.5s linear infinite alternate;
+    }
+
+
+    @keyframes scale {
+      from {
+        box-shadow: 0px 0px 0px #fff;
+        transform: scale(1);
+      }
+
+      to {
+        box-shadow: 0px 0px 50px #fff;
+        transform: scale(1.2);
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>热爱生活</h1>
-    <h3>汪国真</h3>
-    <p>我不去想是否能够成功<br/>
-      
-      　　既然选择了远方<br/>
-      　　便只顾风雨兼程<br/>
-    </p>
-    <p>
-      我不去想能否赢得爱情<br/>
-      　　既然钟情于玫瑰<br/>
-      　　就勇敢地吐露真诚<br/>
-    </p>  
-    <p>
-      我不去想身后会不会袭来寒风冷雨<br/>
-      　　既然目标是地平线<br/>
-      　　留给世界的只能是背影<br/>
-    </p>
-    <p>
-      我不去想未来是平坦还是泥泞<br/>
-      　　只要热爱生命<br/>
-      　　一切，都在意料之中<br/>
-    </p>
+  <h1>热爱生活</h1>
+  <h3>汪国真</h3>
+  <p>我不去想是否能够成功<br />
+
+    　　既然选择了远方<br />
+    　　便只顾风雨兼程<br />
+  </p>
+  <p>
+    我不去想能否赢得爱情<br />
+    　　既然钟情于玫瑰<br />
+    　　就勇敢地吐露真诚<br />
+  </p>
+  <p>
+    我不去想身后会不会袭来寒风冷雨<br />
+    　　既然目标是地平线<br />
+    　　留给世界的只能是背影<br />
+  </p>
+  <p>
+    我不去想未来是平坦还是泥泞<br />
+    　　只要热爱生命<br />
+    　　一切，都在意料之中<br />
+  </p>
+  <div class="box">
+    <img src="img/1.png" alt="">
+    <img src="img/2.png" alt="">
+
+    <div class="sun"></div>
+  </div>
 </body>
+
 </html>

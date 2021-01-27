@@ -1,5 +1,13 @@
+
+/* *{
+  margin: 0;
+  padding: 0;
+} */
 body,html{
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   text-align: center ;
+  background: url('https://cn.bing.com/images/search?view=detailV2&ccid=ohC8mRGU&id=18D7602383A5064D9954AFE441E60006A51FFBC3&thid=OIP.ohC8mRGUzKp_3r6QY7Ru9wHaNK&mediaurl=https%3a%2f%2fpic1.zhimg.com%2fv2-a210bc991194ccaa7fdebe9063b46ef7_r.jpg&exph=1920&expw=1080&q=%e5%a5%bd%e7%9c%8b%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%a3%81%e7%ba%b8&simid=607995485113290135&ck=C78A70E1A2DD2B5A51F7B48EFC372C5A&selectedIndex=55&qpvt=%e5%a5%bd%e7%9c%8b%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%a3%81%e7%ba%b8&FORM=IRPRST');
 }
