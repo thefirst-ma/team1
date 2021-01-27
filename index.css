@@ -1,11 +1,5 @@
 body,html{
   width: 100%;
   height: 100%;
-  text-align: center !important;
-}
-h1,h3{
-  text-align: center !important;
-}
-p{
-  text-align: center !important;
+  text-align: center ;
 }
