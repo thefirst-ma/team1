@@ -1,4 +1,4 @@
 //dev
 function ajax(params) {
-  1231
+  console.log("你好 李焕英");
 }
